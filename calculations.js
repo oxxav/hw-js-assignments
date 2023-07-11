@@ -23,6 +23,18 @@ function getRestAfterDivision(x, y) {
   return x;
 }
 
+function incr(x) {
+  x++;
+  return x;
+}
+console.log(incr(89));
+
+function decr(x) {
+  x--;
+  return x;
+}
+console.log(decr(80 + 9));
+
 console.log(getRestAfterDivision(7000, 3));
 console.log(increaseBalance(3000, 700));
 console.log(decreaseBalance(3000, 700));
