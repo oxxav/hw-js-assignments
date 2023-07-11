@@ -2,23 +2,28 @@ function increaseBalance(x, y) {
   x = x + y;
   return x;
 }
+console.log(increaseBalance(3000, 700));
 
-function decreaseBalance(x) {
-x = x - y;
-return x;
+function decreaseBalance(x, y) {
+  // добавила второй параметр
+  x = x - y;
+  return x;
 }
+console.log(decreaseBalance(3000, 700));
 
 function divideBalanceByAccounts(x, y) {
   x = x / y;
   return x;
-  console.log("x");
+  //console.log("x");--- После return функция возвращает результат и прекращает свою работу
 }
+console.log(divideBalanceByAccounts(3000, 2, 4000)); //  указано три параметра, а нужно два
 
 function getRestAfterDivision(x, y) {
   x = x % y;
   return x;
 }
 
+console.log(getRestAfterDivision(7000, 3));
 console.log(increaseBalance(3000, 700));
 console.log(decreaseBalance(3000, 700));
 console.log(divideBalanceByAccounts(3000, 2, 4000));
